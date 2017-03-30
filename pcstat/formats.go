@@ -29,7 +29,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/tobert/pcstat"
+	"github.com/sjtuhjh/pcstat"
 )
 
 type PcStatusList []pcstat.PcStatus

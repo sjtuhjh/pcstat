@@ -12,16 +12,16 @@ I wrote this is so that Apache Cassandra users can see if ssTables are being
 cached. If $GOPATH/bin is in your PATH, this will get it installed:
 
     go get golang.org/x/sys/unix
-    go get github.com/tobert/pcstat/pcstat
+    go get github.com/sjtuhjh/pcstat/pcstat
     pcstat /var/lib/cassandra/data/*/*/*-Data.db
 
 If you don't want to mess around with building the software, binaries are provided
 in orphaned branches so you can pull them down from Github with curl/wget.
 
     if [ $(uname -m) == "x86_64" ] ; then
-        curl -L -o pcstat https://github.com/tobert/pcstat/raw/2014-05-02-01/pcstat.x86_64
+        curl -L -o pcstat https://github.com/sjtuhjh/pcstat/raw/2014-05-02-01/pcstat.x86_64
     else
-        curl -L -o pcstat https://github.com/tobert/pcstat/raw/2014-05-02-01/pcstat.x86_32
+        curl -L -o pcstat https://github.com/sjtuhjh/pcstat/raw/2014-05-02-01/pcstat.x86_32
     fi
     chmod 755 pcstat
     ./pcstat /var/lib/cassandra/data/*/*/*-Data.db
@@ -163,7 +163,7 @@ atobey@brak ~/src/pcstat $ ./pcstat testfile
 
 ## Building
 
-    git clone https://github.com/tobert/pcstat.git
+    git clone https://github.com/sjtuhjh/pcstat.git
     cd pcstat
     go build
     sudo cp -a pcstat /usr/local/bin
