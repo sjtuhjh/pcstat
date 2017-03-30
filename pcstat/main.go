@@ -31,7 +31,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/tobert/pcstat"
+	"github.com/sjtuhjh/pcstat"
 )
 
 var (
